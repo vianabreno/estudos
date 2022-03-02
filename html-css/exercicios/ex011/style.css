@@ -1,0 +1,16 @@
+@charset "UTF-8";
+body{
+    background-color: aqua;
+}
+h1{
+    color: blue;
+}
+h2{
+    color: blueviolet;
+}
+#principal{
+    text-align: center;
+}
+.destaque{
+    background-color: brown;
+}

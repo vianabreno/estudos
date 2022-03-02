@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'fonte01';
+    src: url(fontes/stop\ bullying\ otf.otf) format('opentype');
+    font-size: normal;
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    background-image: linear-gradient(to top, #69BFA0, #B4D9CB);
+}
+main {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 850px;
+    margin: auto;
+}
+h1 {
+    font-family: 'fonte01';
+    color: #127346; text-align: center; text-shadow: 02px 02px 02px white;
+}
+h2 {
+    font-family: 'fonte01';
+    color: #127346; text-align: center; text-shadow: 02px 02px 02px white;
+}

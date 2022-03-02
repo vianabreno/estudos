@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to bottom, #F495AE, #F24B78, #734652); background-attachment: fixed;
+}
+h1 {
+    color: white; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;
+}
+h2 {
+    color: white; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;
+}
+h3 {
+    color: floralwhite; font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+p {
+    color: floralwhite; font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a {
+    color: floralwhite; font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ul {
+    color: white;
+}

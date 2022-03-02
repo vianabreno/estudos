@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+@font-face {
+    font-family: 'bull';
+    src: url(fontes/stop\ bullyingg\ otf.otf) format('opentype'); 
+    src: url(fontes/stop\ bullyingg\ ttf.ttf) format('truetype');
+}
+
+body{
+    background-image: linear-gradient(to top, #2E5775, #1178C2);
+}
+main{
+    background-color: white;
+    width: 830px;
+    margin: auto;
+    border-radius: 30px;
+    padding: 15px;
+}
+h1{
+    color: #062942;
+    text-align: center;
+    font-family: 'bull', Arial, Helvetica, sans-serif; 
+    font-size: normal;
+    font-weight: normal;
+    font-style: normal;
+    text-shadow: 2px 2px 2px white;
+
+}
+h2{
+    color: #062942;
+    text-align: center;
+    font-family: 'bull', Arial, Helvetica, sans-serif;
+    font-size: normal;
+    font-weight: normal;
+    font-style: normal;
+    text-shadow: 2px 2px 2px white;
+}
+.foto01{
+    text-align: center;
+}
+.pagina{
+    text-align: center;
+}
+.pagina02{
+    text-align: center;
+    width: 600px;
+}
+.paginafinal{
+    text-align: center;
+    width: 450px;
+}
+.video{
+    text-align: center;
+    width: 600px;
+}
+#paginafinal{
+    background-image: linear-gradient(to right, #2E5775, #1178C2);
+}
+#mainfinal{
+    text-align: center;
+    width: 200px;
+}

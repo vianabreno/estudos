@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'bully' ;
+    src: url(fontes/stop\ bullying\ otf.otf) format('opentype');
+}
+body{
+    background-color: #04D9D9;
+}
+header{
+    background-color: #04ADBF;
+    padding: 2px;
+    margin:auto;
+    border-radius: 5px;
+}
+h1{
+    color: white;
+    font-family: 'bully', Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px brown;
+}
+nav{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    width: 600px;
+    border-radius: 4px;
+}
+nav > a{
+    background-color: #04D9D9;
+    text-decoration: none;
+    padding: 5px;
+    font-family: 'bully', Helvetica, sans-serif;
+    color: brown;
+    text-shadow: 1px 1px 1px white;
+    width: 100px;
+    margin: 40px;
+    border-radius: 3px;
+}
+main{
+    background-color: white;
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 4px;
+}
+.banner{
+    text-align: center;
+}
+article{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background-color: white;
+    padding: 20px;
+}
+section{
+    font-family: 'bully', Helvetica, sans-serif;
+    font-size: normal;
+    background-color: #04D9D9;
+    border-radius: 4px;
+}
+section > h2{
+    text-shadow: 2px 2px 2px brown;
+    color: white;
+    padding: 16px;
+    padding-bottom: 0%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+footer{
+    background-color: white;
+    font-family: 'bully', Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: brown;
+    text-align: center;
+    border-radius: 4px;
+}
+footer >p{
+    padding: 10px;
+}
+#boxfoto{
+    width: 900px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.boxfoto{
+    text-align: center;
+    padding: 20px;
+}
+.voltarpagina{
+    background-color: white;
+    text-align: center;
+    font-family: 'bully', Helvetica, sans-serif;
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
+}
+div > p{
+    padding: 10px;
+}
+div > p > a{
+    text-decoration: none;
+}
+#boxvideo{
+    width: 600px;
+    margin-top: 10px;
+}
+.boxvideo{
+    text-align: center;
+    padding: 7px;
+}
+nav > div > a{
+    text-decoration: none;
+    font-family: 'bully', Helvetica, sans-serif;
+    font-size: normal;
+    color: white;
+    text-shadow: 1px 1px 1px brown;
+    margin: 0%;
+    padding: 0%;
+}
+nav > div{
+    background-color: #04ADBF;
+    padding: 8px;
+    width: 350px;
+    margin: auto;
+    border-radius: 5px;
+}
+#ultimapagina{
+    margin-top: 180px;
+}
+a:hover{
+    background-color: yellow;
+}
+.voltarpagina:hover{
+    background-color: yellow;
+}
+.links:hover{
+    background-color: yellow;
+}
+
