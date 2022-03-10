@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando menu responsivo</title>
+    <style>
+
+        body{
+            background-color: aqua;
+        }
+        header{
+            background-color: brown;
+        }
+        h1{
+            color: white;
+        }
+        p{
+            color: wheat;
+        }
+        nav{
+            background-color: aqua;
+            text-align: center;
+            margin-bottom: 0%;
+        }
+        nav > a{
+            color: white;
+            text-decoration: none;
+            padding: 30px;
+        }
+        #menu{
+            padding: 0%;
+            margin: 0%;
+            background-color: aqua;
+            display: inline-block;
+            color: white;
+        }
+        #menu > p > a{
+            display: none;
+        }
+        #menu:hover > p > a{
+            display: block;
+            color: brown;
+        }
+        menu > img{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TITULO SITE</h1>
+        <P>text complementar</P>
+    </header>
+    <nav>
+        <div id="menu">
+            <img src="favicon01.ico" alt="">
+            <p><a href="#">Teste 01</a></p>
+            <p><a href="#">Teste 01</a></p>
+            <p><a href="#">Teste 01</a></p>
+        </div>
+    </nav>
+</body>
+</html>
