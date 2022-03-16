@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Tabela</title>
+    <style>
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            font-weight: bold;
+            background-color: aqua;
+            width: 500px;
+            height: 500px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 2px solid black;
+            vertical-align: middle;
+            padding: 10px;
+            
+        }
+        tr{
+            text-align: center;
+        }
+        .elementox1{
+            background-color: aquamarine;
+        }
+        .elementox2{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="elementox1">01</td>
+            <td>02</td>
+            <td>03</td>
+            <td class="elementox2">04</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td class="elementox1">02</td>
+            <td class="elementox2">03</td>
+            <td>04</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td class="elementox2">02</td>
+            <td class="elementox1">03</td>
+            <td>04</td>
+        </tr>
+        <tr>
+            <td class="elementox2">01</td>
+            <td>02</td>
+            <td>03</td>
+            <td class="elementox1">04</td>
+        </tr>
+    </table>
+</body>
+</html>
