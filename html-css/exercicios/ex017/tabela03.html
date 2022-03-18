@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 03</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        table{
+            width: 800px;
+            height: 300px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+            font-size: 1.5em;
+            font-weight: bolder;
+            
+        }
+        thead{
+            background-color: rgba(0, 0, 0, 0.384);
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, sans-serif;
+            font-size: normal;
+            font-weight: normal;
+        }
+        tbody{
+            background-color: aquamarine;
+            color: brown;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+            font-size: normal;
+            font-weight: normal;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 5px;
+            vertical-align: top;
+            text-align: center;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            Tabela de Clientes Teks
+        </caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Localização</th>
+                <th>Contato</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Francisco Breno</td>
+                <td>Quixada|CE</td>
+                <td>88 99840-0703</td>
+                <td>Em negociação</td>
+            </tr>
+            <tr>
+                <td>Maria Joaquina</td>
+                <td>São Paulo|SP</td>
+                <td>11 98125-3625</td>
+                <td>Fechado</td>
+            </tr>
+            <tr>
+                <td>José Claudio</td>
+                <td>Minas Gerais|MG</td>
+                <td>79 93465-8578</td>
+                <td>Pendente</td>
+            </tr>
+            <tr>
+                <td>Amarildo Pinto</td>
+                <td>Fortaleza|CE</td>
+                <td>85 95685-6548</td>
+                <td>Fechado</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+</body>
+</html>
