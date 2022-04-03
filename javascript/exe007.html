@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Funçoes 04 </title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        h1{
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.808);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2m;
+            font-weight: bolder;
+            text-align: center;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: normal;
+            font-weight: normal;
+            text-align: center;
+        }
+        div{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            color: white;
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CLIQUE NA DIV</h1>
+    <p>Clique na diva e veja a magica !</p>
+    <DIV id="area">Clique aqui</DIV>
+</body>
+<script>
+    var a1 = window.document.getElementById('area')
+    a1.addEventListener('click', clicar)
+    a1.addEventListener('mouseout', sair)
+    a1.addEventListener('mouseenter', entrar)
+    
+    function clicar(){
+        a1.style.background = 'blue'
+    }
+
+    function sair(){
+        a1.style.background = 'orange'
+    }
+    
+    function entrar(){
+        a1.style.background = 'green'
+    }
+</script>
+</html>
