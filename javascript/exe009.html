@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="n01" id="n001"> +
+    <input type="number" name="n02" id="n002">
+    <input type="button" value="Somar" onclick="soma()">
+
+    <div>
+        <h2>Resultado</h2>
+        <p id="res">A soma dos numeros é:</p>
+    </div>
+</body>
+<script>
+    function soma(){
+        var n01 = window.document.getElementById('n001')
+        var n02 = window.document.getElementById('n002')
+        var res = window.document.getElementById('res')
+
+        var n1 = Number(n01.value)
+        var n2 = Number(n02.value)
+        var s = n1 + n2
+
+        res.innerHTML = `${s}`
+    }
+</script>
+</html>
