@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE DE CIDADANIA</title>
+</head>
+<body>
+    <h1>QUAL SUA NATURALIDADE?</h1>
+    <p>Caso você seja de outro país será classificado com "estrangeiro".</p>
+    <input type="text" name="" id="n1">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div>
+        <h2>Resposta</h2>
+        <p id="res">Resposta aqui</p>
+    </div>
+</body>
+<script>
+    function clicar(){
+        var pais = window.document.getElementById('n1')
+        var res = window.document.getElementById('res')
+        var paiis = String(pais.value)
+
+        if(paiis == 'Brasil'){
+            res.innerHTML = 'Brasileiro'
+        } else{
+            res.innerHTML = 'Estrangeiro'
+        }
+    }
+</script>
+</html>
