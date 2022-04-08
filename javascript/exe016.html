@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento JS</title>
+</head>
+<body>
+    <h1>VELOCIMENTRO</h1>
+    <P>A velocidade limite é de 80km/h, caso sua velocidade ultrapasse o permitido será MULTADO.</P>
+    Digite sua velocidade aqui: <input type="number" id="tx1">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div>
+        <h2>Resultado</h2>
+        <p id="res">Sua velocidade é 0km/h!</p>
+        <p>Dirija com segurança, use sinto!</p>
+    </div>
+</body>
+<script>
+    function verificar(){
+        var vel = window.document.getElementById('tx1')
+        var res = window.document.getElementById('res')
+        var vell = Number(vel.value)
+
+        if(vell > 80){
+            res.innerHTML = `Sua velocidade de ${vell} ultrapassou o limite permitido. <strong>MULTADO!</strong>`
+        } else{
+            res.innerHTML = `Sua velocidade de ${vell} está dentro do limite permitido!`
+        }
+    }
+</script>
+</html>
