@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste JavaS</title>
+</head>
+<body>
+    <h1>SISTEMA DE MULTAS</h1>
+    <p>Digite sua velocidade abaixo e veja se está dentro do limite.</p>
+    Digite aqui sua velocidade: <input type="number" id="n1">Km/h
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div>
+        <h2>Resultado</h2>
+        <p id="res">Sua velocidade é de 0km/h!</p>
+        <p>Dirija com segurança, use sinto!</p>
+    </div>
+</body>
+<script>
+    function clicar(){
+        var vel = window.document.getElementById('n1')
+        var res = window.document.getElementById('res')
+        var vell = Number(vel.value)
+
+        if(vell > 120){
+            res.innerHTML = `Sua velocidade de ${vell}km/h ultrapassou o limite permitido. <strong>MULTADO</strong>! `
+        } else {
+            if(vell > 80 || vell == 120){
+                res.innerHTML = `Sua velocidade de ${vell}km/h está enquadrada como alta, por favor diminua a velocidade `
+            } else{
+                if(vell > 60 || vell == 80){
+                    res.innerHTML = `Sua velocidade é de ${vell}km/h, mantenha essa velocidade `
+                } else{
+                    res.innerHTML = `Sua velocidade é de ${vell}km/h. A velocidade ideal para esse trageto é de 60km/h`
+                }
+            }
+        }
+    }
+</script>
+</html>
