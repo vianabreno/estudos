@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando</title>
+</head>
+<body>
+    <h1>TESTE</h1>
+    <p>Testando </p>
+    <input type="number" id="n1">
+    <input type="button" value="verificar" onclick="clicar()">
+    <div>
+        <p id="res">Resposta</p>
+    </div>
+</body>
+<script>
+    function clicar(){
+        var n = window.document.getElementById('n1')
+        var res = window.document.getElementById('res')
+        var nn = Number(n.value)
+
+        while(nn <= 10){
+            res.innerHTML = 'AHHHH'
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando</title>
+</head>
+<body>
+    <h1>Nivel de Permissoes</h1>
+    <p>Digite seu cargo e veja quais as suas permições:</p>
+    Digite aqui seu cargo: <input type="search" id="p">
+    <input type="button" value="verificar" onclick="clique()">
+    <div>
+        <h2>Resultado</h2>
+        <p id="res">Digite seu cargo e veja aqui suas permições!</p>
+    </div>
+    <script>
+        function clique(){
+            var p = window.document.getElementById('p')
+            var res = window.document.getElementById('res')
+            var pp = String(p.value)
+
+            switch(pp){
+                case 'Administrador':
+                    res.innerHTML = `Seu cargo de ${pp} lhe permite acesso em todo o complexo!`
+                    break
+                case 'Gerente':
+                    res.innerHTML = `Seu cargo de ${pp} lhe permite acesso somente os andares adimistrativos`
+                    break
+                case 'Professor':
+                    res.innerHTML = `Seu cargo de ${pp} lhe permite acesso somente os blocos de salas letivas!`
+                    break
+                default:
+                    res.innerHTML = `Seu cargo de ${pp} não tem permissão para entrar!`
+            }
+        }
+    </script>
+</body>
+</html>

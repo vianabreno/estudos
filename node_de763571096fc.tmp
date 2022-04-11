@@ -1,0 +1,6 @@
+var sim = 'certo'
+var res = 'errado'
+
+while(res != sim){
+    console.log('Digite Novamente')
+}

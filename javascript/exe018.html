@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando</title>
+</head>
+<body>
+    <h1>RELOGIO SEMANAL</h1>
+    <p>Digite o numero e veja qual é o dia da semana!</p>
+    Digite aqui seu numero de 0 a 6: <input type="number" id="n">
+    <input type="button" value="verificar" onclick="clique()">
+    <div>
+        <h2>Resultado</h2>
+        <p id="res">O dia da semana selecionado é...</p>
+    </div>
+</body>
+<script>
+    function clique(){
+        var n = window.document.getElementById('n')
+        var res = window.document.getElementById('res')
+        var nn = Number(n.value)
+
+        switch(nn){
+            case 0:
+            res.innerHTML = 'Domingo'
+            break
+
+            case 1:
+            res.innerHTML = 'Segunda'
+            break
+
+            case 2:
+            res.innerHTML = 'Terça'
+            break
+
+            default:
+            res.innerHTML = 'Nenhum numero encontrado'
+        }
+
+    }
+</script>
+</html>
