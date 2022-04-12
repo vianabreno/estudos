@@ -1,6 +1,4 @@
-var sim = 1
-
-while(sim <= 10){
-    console.log('Digite Novamente')
-    c++
+for(var c =1; c <= 10; c++){
+    console.log(`${c}`)
 }
+console.log('Finalizando')
