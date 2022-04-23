@@ -2,7 +2,8 @@ function carregar(){
     var txt = window.document.getElementById('txt')
     var txtt = window.document.getElementById('txtt')
     var txttt = window.document.getElementById('txttt')
-    var img = window.document.getElementById('img')
+    var img = window.document.getElementById('imagem')
+    var cabeça = window.document.getElementById('cabeça')
     var data = new Date()
     var hora = data.getHours()
     var min = data.getMinutes()
@@ -13,7 +14,23 @@ function carregar(){
 
     if(hora >= 0 && hora < 12){
         document.body.style.background = 'green'
-    } else if(hora >=12 && < 18){
+        img.src = 'imagemman.jpg'
+        cabeça.style.background = 'green'
+    } 
+    
+    else if(hora >= 12 && hora < 18){
         document.body.style.background = 'yellow'
+        img.src = 'imagemtar.jpg'
+        cabeça.style.background = 'yellow'
+        txt.style.color = 'black'
+        txtt.style.color = 'black'
+        txttt.style.color = 'black'
+    } 
+    
+    else if(hora >= 18 && hora < 23){
+        document.body.style.background = 'red'
+        img.src = 'imagemnoi.jpg'
+        cabeça.style.background = 'red'
     }
+    
 }
