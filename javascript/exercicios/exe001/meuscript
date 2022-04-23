@@ -1,0 +1,35 @@
+function carregar(){
+    var txt = window.document.getElementById('txt')
+    var txtt = window.document.getElementById('txtt')
+    var txttt = window.document.getElementById('txttt')
+    var imagem = window.document.getElementById('imagem')
+    var cabeça = window.document.getElementById('cabeça')
+    var data = new Date()
+    var hora = data.getHours()
+    var minu = data.getMinutes()
+
+    if(minu < 10){
+        txt.innerHTML = `Agora são exatamente ${hora}:0${minu} horas!`
+    } else{
+        txt.innerHTML = `Agora são exatamente ${hora}:${minu} horas!`
+    }
+
+    if(hora >= 0 && hora < 12){
+        imagem.src = 'imagemmanha.jpg'
+        document.body.style.background = 'green'
+        cabeça.style.background = 'green'
+        
+    } else if(hora >= 12 && hora < 18){
+        imagem.src = 'imagemtarde.jpg'
+        txt.style.color = 'black'
+        txtt.style.color = 'black'
+        txttt.style.color = 'black'
+        document.body.style.background = 'yellow'
+        cabeça.style.background = 'yellow'
+
+    } else if(hora >= 18 && hora < 23){
+        imagem.src = 'imagemnoite.jpg'
+        document.body.style.background = 'red'
+        cabeça.style.background = 'red'
+    }
+}
