@@ -15,10 +15,24 @@ function verificar(){
     if(sex[0].checked){
         genero = 'Masculino'
         if(idade >=0 && idade < 10){
-            img.setAttribute('src', 'imagens/mulher.png')
+            img.setAttribute('src', 'imagens/criançamenino.png')
+        } else if(idade >= 10 && idade < 21){
+            img.setAttribute('src', 'imagens/jovemhomem.png')
+        } else if(idade >= 21 && idade < 60){
+            img.setAttribute('src', 'imagens/homem.png')
+        } else if(idade >= 60 && idade < 130){
+            img.setAttribute('src', 'imagens/idoso.png')
         }
     } else if(sex[1].checked){
         genero = 'Feminino'
+    }   if(idade >=0 && idade < 10){
+        img.setAttribute('src', 'imagens/criançamenina.png')
+    } else if(idade >= 10 && idade < 21){
+        img.setAttribute('src', 'imagens/jovemfeminina.png')
+    } else if(idade >= 21 && idade < 60){
+        img.setAttribute('src', 'imagens/mulher.png')
+    } else if(idade >= 60 && idade < 130){
+        img.setAttribute('src', 'imagens/idosa.png')
     }
 
     //Alertas
@@ -31,5 +45,6 @@ function verificar(){
     } else if(anoo >= 1908){
         res.innerHTML = `Individuo do sexo ${genero} com ${idade} anos.`
         res.appendChild(img)
+        img.style.paddingTop = '20px'
     }
 }
