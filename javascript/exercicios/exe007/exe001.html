@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco BB</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="meuscr.js"></script>
+</head>
+<body>
+    <main>
+        <h1>CAIXA ELETRONICO</h1>
+        <P>Digite seu saldo:</P>
+        <strong>R$</strong> <input type="number" id="saldo">
+        <p>Valor do saque:</p>
+        <strong>R$</strong> <input type="number" id="saque"> <br>
+        <input type="button" value="Sacar" onclick="sacar()">
+        <h2 id="extrato"></h2>
+        <p id="res"></p>
+    </main>
+</body>
+</html>
