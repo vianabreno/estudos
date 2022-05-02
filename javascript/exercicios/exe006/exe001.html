@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="meuscr.js"></script>
+</head>
+<body>
+    <header><h1>CAIXA ELETRÔNICO</h1></header>
+    <main>
+        <div>
+            <h2>Saldo</h2>
+            R$<input type="text" id="saldo">
+        </div>
+        <div>
+            <h2>Saque</h2>
+            <p>Digite o valor:</p>
+            R$<input type="text" id="saque"> <br>
+            <input type="button" value="Sacar" onclick="sacar()">
+        </div>
+        <div id="ex">
+            <h2 id="ress"></h2>
+            <p id="res"></p>
+        </div>
+    </main>
+</body>
+</html>
