@@ -1,0 +1,5 @@
+let pizza = 8
+
+do{
+    console.log(`Restam ${pizza} pedaços!`)
+} while(pizza >= 0)
