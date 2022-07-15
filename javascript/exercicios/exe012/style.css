@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+div{
+    background-color: blue;
+    background-image: url('61449.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+#mensagem{
+    text-align: center;
+    font-size: 2em;
+}
+
